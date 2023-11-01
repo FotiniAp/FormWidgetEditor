@@ -1,51 +1,27 @@
+
+require('./dbConnection/db');
+var cors = require("cors");
 const express = require('express');
+
+const router = require('./router/route');
+
 const app = express();
 const port = 8080;
-
 app.use(express.json());
+app.use(express.urlencoded({
+    extended: true
+}));
 
-const mysql = require('mysql');
-
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'form_widget_editor',
+app.use(cors());
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
 });
 
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to the database');
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-
-app.post('/api/form-settings', (req, res) => {
-    const { title, subtitle, font_size, font_color, text_alignment, submit_button_bg_color } = req.body;
-
-    const formSettings = {
-        title,
-        subtitle,
-        font_size,
-        font_color,
-        text_alignment,
-        submit_button_bg_color,
-    };
-
-    const sql = 'INSERT INTO form_settings SET ?';
-
-    db.query(sql, formSettings, (err, result) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ message: 'Error saving form settings' });
-        }
-
-        console.log('Form settings saved');
-        res.status(200).json({ message: 'Form settings saved successfully' });
-    });
-});
+app.use(router)
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
