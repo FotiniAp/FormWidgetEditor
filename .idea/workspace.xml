@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7741c25b-395f-43e7-aa37-8336a0f1c06f" name="Changes" comment="" />
+    <list default="true" id="7741c25b-395f-43e7-aa37-8336a0f1c06f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-widget-editor-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/form-widget-editor-backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-widget-editor-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/form-widget-editor-backend/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +53,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;sshConsole&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/opt/PhpStorm-232.10072.32/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -61,6 +67,8 @@
       <updated>1698143299045</updated>
       <workItem from="1698143300038" duration="1552000" />
       <workItem from="1698218828232" duration="30000" />
+      <workItem from="1698827188127" duration="2024000" />
+      <workItem from="1698829570011" duration="999000" />
     </task>
     <servers />
   </component>
