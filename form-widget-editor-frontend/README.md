@@ -1,6 +1,5 @@
 # form-widget-editor-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
@@ -21,6 +20,8 @@ npm install
 ```sh
 npm run dev
 ```
+### after running the above command terminal shows: VITE v4.5.0  ready in 314 ms Local:   http://localhost:5173/
+### click the link to transfer to the page
 
 ### Compile and Minify for Production
 
